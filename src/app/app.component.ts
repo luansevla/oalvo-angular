@@ -31,6 +31,11 @@ export class AppComponent {
       title: 'Inscrições',
       icon: 'confirmation_number',
       active: true
+   },
+   {
+      title: 'Kids',
+      icon: 'child_care',
+      active: true
    }
   ];
 }
