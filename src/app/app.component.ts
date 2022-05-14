@@ -15,27 +15,38 @@ export class AppComponent {
     {
       title: 'Início',
       icon: 'home',
-      active: true
+      active: true,
+      route: '/home'
    },
    {
       title: 'Usuários',
       icon: 'account_circle',
-      active: true
+      active: true,
+      route: '/users'
    },
    {
       title: 'Eventos',
       icon: 'event',
-      active: true
+      active: true,
+      route: '/events'
    },
    {
       title: 'Inscrições',
       icon: 'confirmation_number',
-      active: true
+      active: true,
+      route: '/enrollments'
    },
    {
       title: 'Kids',
       icon: 'child_care',
-      active: true
+      active: false,
+      route: '/kids'
+   },
+   {
+      title: 'Delivery',
+      icon: 'lunch_dining',
+      active: false,
+      route: '/delivery'
    }
   ];
 }

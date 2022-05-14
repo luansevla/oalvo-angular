@@ -18,12 +18,13 @@
 
   <mat-drawer-container class="example-container" hasBackdrop="true">
     <mat-drawer #drawer mode="over">
-      <span style="height: 20px;">&nbsp;</span>
-      <button mat-stroked-button color="primary" *ngFor="let route of routes"
-        [value]="route" routerLink="/home" routerLinkActive="true">
+      <span *ngFor="let route of routes">
+      <button mat-stroked-button color="primary"
+        [value]="route" routerLink="{{route.route}}" routerLinkActive="true">
         <mat-icon class="material-icons-outlined">{{route.icon}}</mat-icon>
          &nbsp; {{route.title}}
       </button>
+      </span>
     </mat-drawer>
 
     <mat-drawer-content>
