@@ -9,22 +9,30 @@ import { SnackbarComponent } from './shared/components/snackbar/snackbar.compone
 import { SharedModule } from './shared/shared.module';
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { MatButtonModule } from '@angular/material/button';
+import { DialogLogin, LoginComponent } from './core/authentication/login/login.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { AuthService } from './services/api/auth.service';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SnackbarComponent
+    SnackbarComponent,
+    LoginComponent,
+    DialogLogin,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    ReactiveFormsModule,
     SharedModule,
     HomeModule,
     MatSidenavModule,
-    MatButtonModule
+    MatButtonModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

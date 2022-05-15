@@ -1,0 +1,39 @@
+.cdk-overlay-dark-backdrop {
+  background: rgba(0, 0, 0, 0) !important;
+}
+mat-card {
+  width: 98%;
+  min-width: 98%;
+  max-width: 100%;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+mat-card.login-card {
+  width: 300px !important;
+  max-width: 300px !important;
+  min-width: 300px !important;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.mat-form-field {
+  display: inline-block;
+  position: relative;
+  text-align: left;
+  width: 100%;
+}
+
+.example-header-image {
+  background-image: url('./../../../../../assets/img/hfh-removebg-preview.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}

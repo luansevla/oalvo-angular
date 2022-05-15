@@ -1,7 +1,13 @@
-export * from './pet.service';
-import { PetService } from './pet.service';
-export * from './store.service';
-import { StoreService } from './store.service';
+export * from './auth.service';
+import { AuthService } from './auth.service';
+export * from './enrollment.service';
+import { EnrollmentService } from './enrollment.service';
+export * from './event.service';
+import { EventService } from './event.service';
+export * from './payment.service';
+import { PaymentService } from './payment.service';
 export * from './user.service';
 import { UserService } from './user.service';
-export const APIS = [PetService, StoreService, UserService];
+export * from './validate.service';
+import { ValidateService } from './validate.service';
+export const APIS = [AuthService, EnrollmentService, EventService, PaymentService, UserService, ValidateService];
