@@ -53,3 +53,7 @@ body {
 .mat-button-focus-overlay {
   background-color: transparent !important;
 }
+
+.cdk-overlay-dark-backdrop {
+  background: rgba(0, 0, 0, 0.9) !important;
+}
